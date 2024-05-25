@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ube Pandesal</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" type="image/x-icon" href="/images/US-1-removebg-preview.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        font-family: 'Inter','sanserif';
+
+    }
+    
+    @media(max-width:991px){
+        html{
+            font-size: 55%;
+        }
+        .specs{
+            padding: 2rem 7%;
+        }
+    }
+
+    @media(max-width:768px){
+        html{
+            font-size: 50%;
+        }
+        .specs{
+            padding: 2rem 7%;
+        }
+    }
+
+    
+    @media(max-width: 480px){
+        html{
+            font-size: 45%;
+        }
+    }
+
+    @media(max-width: 375px){
+        html{
+            font-size: 40%;
+        }
+    }
+
+    @media(max-width: 20px){
+        html{
+            font-size: 30%;
+        }
+    }
+    .specs{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 130vh;
+           
+            
+    }
+
+    .specs .box-container{
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), inset 0px -3px 6px -2px rgba(0, 0, 0, 0.3);
+        width: 800px;
+       
+        padding: 4rem;
+        background: #f4f1ec;
+    }
+
+    .specs .box-container .p-name{
+        text-shadow: 2px 3px 3px rgba(0,0,0,0.41);
+        color:#733311;
+        font-size: 3rem;
+        text-align: center;
+        margin: 1rem 1rem;
+    }
+    
+.specs .box-container .box img{
+    height: 25rem;
+    transition: transform .25s;
+    cursor: pointer;
+
+
+}
+
+.specs .box-container .box img:hover{
+    transform: scale(1.23); 
+    transition: all .25s ease-in-out;
+}
+
+.specs .box-container .box .rating {
+      display: flex;
+     justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .specs .box-container .box h4{
+        font-size: 2rem;
+       
+    }
+    .specs .box-container .box p{
+        color: #363636;
+        margin-top: 1.05rem ;
+        margin-bottom: 1.05rem;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    .specs .box-container .box .netweight{
+        color: #363636;
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .specs .box-container .box .ingredients{
+        color: #363636;
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+    .specs .box-container .box strong{
+        color: #000000;
+        font-size: 1.6rem;
+    }
+    
+    .specs .box-container .box .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .specs .box-container h2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .rating .reviews{
+        margin-right: 10px;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .rating{
+        display: flex;
+       
+        align-items: center;
+    }
+    .star {
+        
+      color: #ffd700;
+      font-size: 20px;
+      margin-right: 5px;
+     
+    }
+
+    .button{
+        display: flex;
+       
+        align-items: center;
+    }
+
+    .add{
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), inset 0px -3px 6px -2px rgba(0, 0, 0, 0.3);
+   
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: #f4f1ec;
+    font-weight: 700;
+    background: #733311;
+    font-family: 'Inter','sanserif';
+    margin-right: 4rem;
+    transition: transform .25s;
+    }
+
+    .add:hover{
+        transform: scale(1.04);
+        transition: all .25s ease-in-out;
+    }
+
+    .add2{
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), inset 0px -3px 6px -2px rgba(0, 0, 0, 0.3);
+   
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+    font-weight: 700;
+    border: solid;
+    font-family: 'Inter','sanserif';
+    margin-right: 4rem;
+    transition: .25s;
+    }
+
+    .add2:hover{
+        transition: all .25s ease-in-out;
+        background: #733311;
+        color:#f4f1ec;
+        border-color: #733311;
+    }
+</style>
+<body>
+    <header class="header">
+        <a href="/prototype-parts/UsCoffee.html" class="logo">
+           <img src="prt-img/US-1-removebg-preview copy.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="/prototype-parts/UsCoffee.html">Home</a>
+            <a href="/prototype-parts/menu.html">Menu</a>
+            <a href="/prototype-parts/maps.html">Location</a>
+            <a href="/prototype-parts/contact-us.html">Contact Us</a>
+            <a href="/prototype-parts/shop.html">Shop</a>
+           
+         </nav>
+        <div class="icon">
+               <div class="fas fa-search" id="search-btn"></div>
+               <div class="fas fa-shopping-cart" id="cart-btn"></div>
+               <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+           <input type="search" id="search-box" placeholder="search">
+           <label for="search-box" class="fas fa-search"></label>
+        </div>
+        <div class="cart-item-container">
+
+              <div class="cart-items">
+                 <span class="fas fa-times"></span>
+                 <img src="prt-img/Product-1.png" alt="">
+                 <div class="content">
+                    <h3>Kapeng Barako</h3>
+                    <div class="price">&#8369;200</div>
+                 </div>
+              </div>
+
+              <div class="cart-items">
+                 <span class="fas fa-times"></span>
+                 <img src="prt-img/Product-2.png" alt="">
+                 <div class="content">
+                    <h3>Robusta</h3>
+                    <div class="price">&#8369;200</div>
+                 </div>
+           </div>
+
+              <div class="cart-items">
+                 <span class="fas fa-times"></span>
+                 <img src="prt-img/Product-3.png" alt="">
+                 <div class="content">
+                    <h3>Arabica</h3>
+                    <div class="price">&#8369;200</div>
+                 </div>
+              </div>
+              <a href="" class="btn">Checkout now</a>
+        </div>
+   </header>
+
+   <section class="specs">
+    <div class="box-container">
+        <h3 class="p-name">Ube Pandesal</h3>
+        <div class="box">
+           <div class="image">
+            <img src="/prototype-parts/prt-img/Product-8.png" alt="">
+           </div>
+
+            <div class="rating">
+                <div class="reviews">Reviews:</div>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+              </div>
+            <h2> &#8369; 15</h2>
+            
+            <div class="netweight">
+               <strong> Net Weight:</strong> 40 grams
+            </div>
+            
+        </div>
+       <div class="button">
+        <a href="" class="add">Buy now</a>
+        <a href="" class="add2">Add to cart</a>
+       </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="images">
+        <img src="/prototype-parts/prt-img/US-1-removebg-preview copy.png" alt="">
+    </div>
+    <h1 class="heading">Follow Us</h1>
+    <div class="share">
+        <a href="" class="fab fa-facebook"></a>
+        <a href="" class="fab fa-instagram"></a>
+        <a href="" class="fab fa-linkedin"></a>
+        <a href="" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="/prototype-parts/UsCoffee.html">Home</a>
+        <a href="/prototype-parts/menu.html">Menu</a>
+        <a href="/prototype-parts/maps.html">Location</a>
+        <a href="/prototype-parts/contact-us.html">Contact Us</a>
+        <a href="/prototype-parts/shop.html">Shop</a>
+        <a href="/prototype-parts/aboutUs.html">About Us</a>
+       
+    </div>
+
+    <div class="credit">All rights reserved 2023</div>
+</section>
+<script src="js/script.js"></script>
+</body>
+</html>
