@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" type="image/x-icon" href="/images/US-1-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+                *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        text-decoration: none;
+        font-family: 'Arvo','sanserif';
+
+        }
+        section{
+            padding: 13.5rem 13%;
+        }
+        .about-sec{
+            height: 100%;
+            background: #f4f1ec;
+        }
+.section .about-container .div-container{
+    margin-top: 5rem;
+}
+        .about-sec .about-container{
+            display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 16px;
+        }
+
+        .about-sec .about-container h1{
+            color: #733311;
+            text-align: center;
+            font-size: 3.3rem;
+            margin-bottom: 1.7rem;
+        }
+
+        .about-sec .about-container p{
+            color: #363636;
+            font-size: 1.8rem;
+        }
+
+        @media(max-width: 768px){
+            html{
+                font-size: 50%;
+            }
+        }
+
+        @media(max-width: 375px){
+            html{
+                font-size: 30%;
+            }
+        }
+
+        .footer{
+        background-image: url(/images/wave\ \(1\).svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #f4f1ec;
+        text-align: center;
+    }
+    .footer .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .footer .images img{
+        height: 12rem;
+    }
+    
+    .footer .heading{
+        color: #363636;
+        font-size: 3rem;
+        font-family: 'Inter','sanserif';
+    }
+    
+    .footer .share{
+        padding: 1rem 0;
+    }
+    
+    .footer .share a{
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        font-size: 3.5rem;
+        color: #363636;
+        margin: .3rem;
+        border-radius: 50%;
+    }
+    
+    .footer .share a:hover{
+        color: #733311;
+    }
+    
+    .footer .links{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        gap: 1rem;
+    }
+    
+    .footer .links a{
+        border: solid;
+        font-family: 'Inter','sanserif';
+        padding: 1rem 1.3rem;
+        font-size: 2rem;
+        color: #363636;
+    
+    }
+    .footer .links a:hover{
+       border: solid;
+       border-color: #733311;
+        color: #ffff;
+        background: #733311;
+       
+    }
+    .footer .credit {
+        color: #363636;
+        font-family: 'Inter','sanserif';
+        font-size: 1rem;
+        font-weight: lighter;
+        padding: 1.5rem;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <a href="/prototype-parts/UsCoffee.html" class="logo">
+           <img src="prt-img/US-1-removebg-preview copy.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="/prototype-parts/UsCoffee.html">Home</a>
+            <a href="/prototype-parts/menu.html">Menu</a>
+            <a href="/prototype-parts/maps.html">Location</a>
+            <a href="/prototype-parts/contact-us.html">Contact Us</a>
+            <a href="/prototype-parts/shop.html">Shop</a>
+           
+         </nav>
+        <div class="icon">
+               <div class="fas fa-search" id="search-btn"></div>
+               <div class="fas fa-shopping-cart" id="cart-btn"></div>
+               <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+           <input type="search" id="search-box" placeholder="search">
+           <label for="search-box" class="fas fa-search"></label>
+        </div>
+        <div class="cart-item-container">
+
+              <div class="cart-items">
+                 <span class="fas fa-times"></span>
+                 <img src="prt-img/Product-1.png" alt="">
+                 <div class="content">
+                    <h3>Kapeng Barako</h3>
+                    <div class="price">$00.00</div>
+                 </div>
+              </div>
+
+              <div class="cart-items">
+                 <span class="fas fa-times"></span>
+                 <img src="prt-img/Product-2.png" alt="">
+                 <div class="content">
+                    <h3>Kapeng Barako</h3>
+                    <div class="price">$00.00</div>
+                 </div>
+           </div>
+
+              <div class="cart-items">
+                 <span class="fas fa-times"></span>
+                 <img src="prt-img/Product-3.png" alt="">
+                 <div class="content">
+                    <h3>Kapeng Barako</h3>
+                    <div class="price">$00.00</div>
+                 </div>
+              </div>
+              <a href="" class="btn">Checkout now</a>
+        </div>
+   </header>
+
+    <section class="about-sec">
+        <div class="about-container">
+            <div class="div-container">
+                <h1 class="abt-text">About Us</h1>
+            <p>
+                Welcome to Us Coffee, where passion meets perfection in every cup. At Us Coffee, we believe in the extraordinary power of coffee to bring people together, inspire creativity, and fuel meaningful connections. Our journey began with a shared love for exceptional coffee, and our mission is to elevate your coffee experience to new heights.
+            </p>
+            </div>
+            <div class="div-container">
+                <h1 class="our-story">Our Story</h1>
+            <p>
+                Us Coffee was born out of a simple idea - to deliver the finest coffee beans from around the world to your doorstep. We embarked on a quest to source the most exquisite beans, carefully selected for their unique flavors and characteristics. From the lush coffee plantations to your mug, we ensure that each step of the process is handled with precision and dedication.
+            </p>
+            </div>
+            <div class="div-container">
+                <h1 class="mission-text">Our Mission</h1>
+            <p>
+                Our mission is to redefine your coffee experience by providing a curated selection of premium coffee beans, each chosen for its unique flavor profile and quality. We aim to be more than just a coffee supplier; we want to be your go-to source for discovering the world of exceptional coffee.
+            </p>
+            </div>
+            <div class="div-container">
+                <h1 class="comty-focus">Comunity Focus</h1>
+            <p>
+                Us Coffee is more than just a brand; it's a community of coffee lovers. We value the relationships we build with our customers and the communities we serve. Through sustainable practices and partnerships with coffee growers, we aim to make a positive impact on both the environment and the lives of those involved in the coffee production chain.
+            </p>
+            </div>
+
+            <div class="div-container">
+                <h1 class="comty-focus">Your Journey, Your Coffee</h1>
+            <p>
+                At Us Coffee, we understand that every coffee journey is unique. That's why we offer a diverse range of blends and single-origin coffees, allowing you to explore and savor the rich tapestry of coffee flavors. Whether you're a seasoned coffee connoisseur or a curious newcomer, we invite you to embark on a journey of taste and discovery with Us Coffee.
+
+Thank you for being a part of our coffee community. Cheers to good coffee and great company!
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="images">
+            <img src="/prototype-parts/prt-img/US-1-removebg-preview copy.png" alt="">
+        </div>
+        <h1 class="heading">Follow Us</h1>
+        <div class="share">
+            <a href="" class="fab fa-facebook"></a>
+            <a href="" class="fab fa-instagram"></a>
+            <a href="" class="fab fa-linkedin"></a>
+            <a href="" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="links">
+            <a href="">Home</a>
+            <a href="">Menu</a>
+            <a href="">Location</a>
+            <a href="">Contact Us</a>
+            <a href="">Shop</a>
+            <a href="">About Us</a>
+            <a href="">Blogs</a>
+        </div>
+
+        <div class="credit">All rights reserved 2023</div>
+    </section>
+</body>
+<script src="js/script.js"></script>
+</html>

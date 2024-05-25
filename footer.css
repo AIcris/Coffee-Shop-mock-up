@@ -1,0 +1,73 @@
+.footer{
+    background-image: url(/images/wave\ \(1\).svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f4f1ec;
+    
+    text-align: center;
+}
+.footer .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.footer .images img{
+    height: 12rem;
+}
+
+.footer .heading{
+    color: #363636;
+    font-size: 3rem;
+    font-family: 'Inter','sanserif';
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 3.5rem;
+    color: #363636;
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    color: #733311;
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a{
+    border: solid;
+    font-family: 'Inter','sanserif';
+    padding: 1rem 1.3rem;
+    font-size: 2rem;
+    color: #363636;
+
+}
+.footer .links a:hover{
+   border: solid;
+   border-color: #733311;
+    color: #ffff;
+    background: #733311;
+   
+}
+.footer .credit {
+    color: #363636;
+    font-family: 'Inter','sanserif';
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
