@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" type="image/x-icon" href="/images/US-1-removebg-preview.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+   
+</head>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+        font-family: 'Inter','sanserif';
+
+
+    }
+
+    section{
+        padding: 2rem 7%;
+    }
+
+        .section{
+           
+           align-items: center;
+            width: 100%;
+          padding: 2rem 7%;
+          min-height: 100vh;
+            flex-direction: column;
+            display: flex;
+           justify-content: center;
+           background: #f4f1ec;
+        }
+
+        .nearby-place{
+            box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            font-size: 1.7rem;
+            display: flex;
+            align-items: center;
+            color: #555454 ;           
+            justify-content: center;
+            background: #ebeae8;
+            height: 30rem;
+            width: 100%;
+            text-align: center;
+
+        }
+   .location-container{ 
+   
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  max-width: 960px;
+   
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1.5rem;
+    background: #f4f1ec;
+    
+   }
+
+   .form-container{
+
+    padding: 20px;
+
+   }
+   .form-container h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+   }
+
+   .contact-form{
+    display: grid;
+    row-gap: 1rem;
+    padding: 10px;
+   }
+   
+   .contact-form input{
+    box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    border: none;
+   
+    outline: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+   }
+
+    .map-container iframe{
+        width: 100%;
+        height: 100%;
+   }
+
+   .section .map-container{
+    padding: 20px;
+   }
+
+   .search-button{
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffffff;
+    border: solid;
+    font-weight: 700;
+   background: #733311;
+    font-family: 'Inter','sanserif';
+    margin-right: 4rem;
+    transition: transform .25s;
+   }
+
+   .search-button:hover{
+    transform: scale(1.04);
+        transition: all .25s ease-in-out;
+      
+    }
+    @media(max-width: 964px){
+        .location-container{
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        .nearby-place{
+            height: 20rem;
+        }
+    }
+
+    @media(max-width: 700px){
+        .location-container{
+            gap: 1rem;
+            grid-template-columns: 1fr;
+            margin-top: 20rem !important;
+        }
+
+        .map-container iframe{
+            height: 400px;
+
+        }
+    }
+
+        .container{
+        max-width: 1170px;
+        margin:auto;
+    }
+
+.row{
+    display: flex;
+   justify-content: space-between;
+}
+
+.footer{
+    background-image: url(/images/wave\ \(1\).svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f4f1ec;
+    text-align: center;
+}
+
+.footer .heading{
+    color: #363636;
+    font-size: 3rem;
+    font-family: 'Inter','sanserif';
+}
+.footer .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.footer .images img{
+    height: 12rem;
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 3.5rem;
+    color: #363636;
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    color: #733311;
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a{
+    border: solid;
+    font-family: 'Inter','sanserif';
+    padding: 1rem 1.3rem;
+    font-size: 2rem;
+    color: #363636;
+
+}
+.footer .links a:hover{
+   border: solid;
+   border-color: #733311;
+    color: #ffff;
+    background: #733311;
+   
+}
+.footer .credit {
+    color: #363636;
+    font-family: 'Inter','sanserif';
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+
+</style>
+<body>
+
+    <header class="header">
+        <a href="/prototype-parts/UsCoffee.html" class="logo">
+           <img src="prt-img/US-1-removebg-preview copy.png" alt="">
+        </a>
+
+        <nav class="navbar">
+            <a href="/prototype-parts/UsCoffee.html">Home</a>
+            <a href="/prototype-parts/menu.html">Menu</a>
+            <a href="/prototype-parts/maps.html">Location</a>
+            <a href="/prototype-parts/contact-us.html">Contact Us</a>
+            <a href="/prototype-parts/shop.html">Shop</a>
+           
+         </nav>
+        <div class="icon">
+               <div class="fas fa-search" id="search-btn"></div>
+               <div class="fas fa-shopping-cart" id="cart-btn"></div>
+               <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="search-form">
+           <input type="search" id="search-box" placeholder="search">
+           <label for="search-box" class="fas fa-search"></label>
+        </div>
+        <div class="cart-item-container">
+
+              <div class="cart-items">
+                 <span class="fas fa-times"></span>
+                 <img src="prt-img/Product-1.png" alt="">
+                 <div class="content">
+                    <h3>Kapeng Barako</h3>
+                    <div class="price">&#8369;200</div>
+                 </div>
+              </div>
+
+              <div class="cart-items">
+                 <span class="fas fa-times"></span>
+                 <img src="prt-img/Product-2.png" alt="">
+                 <div class="content">
+                    <h3>Robusta</h3>
+                    <div class="price">&#8369;200</div>
+                 </div>
+           </div>
+
+              <div class="cart-items">
+                 <span class="fas fa-times"></span>
+                 <img src="prt-img/Product-3.png" alt="">
+                 <div class="content">
+                    <h3>Arabica</h3>
+                    <div class="price">&#8369;200</div>
+                 </div>
+              </div>
+              <a href="" class="btn">Checkout now</a>
+        </div>
+   </header>
+    
+    <!--Store-->
+    <section class="section">
+      
+        <div class="location-container">
+          
+            <div class="form-container">
+                <h3>Search Nearby</h3>
+                <form action="" class="contact-form">
+                    <input  type="text" placeholder="Search" required>
+                   <input type="submit" value="Search" class="search-button">
+                   <div class="nearby-place">
+                        Store Near you
+                   </div>
+                </form>
+                
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3840.3959992659825!2d120.92730757439446!3d15.730176884901262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3390d6542653b51b%3A0x111f20f17a610056!2sCentral%20Luzon%20State%20University%20(CLSU)!5e0!3m2!1sen!2sph!4v1701486422496!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    
+
+        <section class="footer">
+            <div class="images">
+                <img src="/prototype-parts/prt-img/US-1-removebg-preview copy.png" alt="">
+            </div>
+            <h1 class="heading">Follow Us</h1>
+            <div class="share">
+                <a href="" class="fab fa-facebook"></a>
+                <a href="" class="fab fa-instagram"></a>
+                <a href="" class="fab fa-linkedin"></a>
+                <a href="" class="fab fa-pinterest"></a>
+            </div>
+        
+            <div class="links">
+                <a href="/prototype-parts/UsCoffee.html">Home</a>
+                <a href="/prototype-parts/menu.html">Menu</a>
+                <a href="/prototype-parts/maps.html">Location</a>
+                <a href="/prototype-parts/contact-us.html">Contact Us</a>
+                <a href="/prototype-parts/shop.html">Shop</a>
+                <a href="/prototype-parts/aboutUs.html">About Us</a>
+               
+            </div>
+        
+            <div class="credit">All rights reserved 2023</div>
+        </section>
+        <div class="credit">All rights reserved 2023</div>
+    </section>
+
+   
+
+<script src="js/script.js"></script>
+</body>
+</html>

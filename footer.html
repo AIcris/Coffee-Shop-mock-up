@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+    section{
+        height: 100vh;
+        background: #f4f1ec;
+        
+    }
+
+    .container{
+    max-width: 1170px;
+    margin:auto;
+}
+
+.row{
+    display: flex;
+   justify-content: space-between;
+}
+
+.footer{
+
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/prototype-parts/prt-img/wave\ \(2\).svg);
+    padding-top: 70px ;
+    padding-bottom: 30px;
+}
+
+.footer-col{
+
+    width: 25%;
+    padding: 0 15px;
+}
+
+.container ul{
+    list-style: none;
+}
+
+.footer-col h4{
+    font-family: 'Poppins','sanserif';
+    font-size: 18px;
+    color:#733311;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+/*
+.search-con{
+    background: #f4f1ec;
+    width:298px;
+     height:45px;
+     box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+
+    
+}
+
+.search-con input{
+    flex: 1;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: #f4f1ec;
+    
+   
+}
+
+.search-con button{
+    background: #733311;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    color: #f4f1ec;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+}
+/*
+.search-con{
+    background: #f4f1ec;
+    width:298px;
+     height:35px;
+     box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+
+}
+.search-con .footer-search{
+    margin-bottom: 10px;
+   
+    outline: none;
+    text-align: center;
+    background: #f4f1ec;
+}
+
+.search-con button{
+    background: #733311;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    color: #f4f1ec;
+    letter-spacing: 1px;
+    cursor: pointer;
+}*/
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-family: 'Poppins','sanserif';
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: block;
+    color: #733311;
+    font-weight: bold;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height:40px;
+    border-radius: 50px;
+    width: 40px;
+    font-size: 20px;
+    background: #000000;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    color:#ffffff;
+}
+
+footer .last-part p{
+  color: #363636;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 767px){
+    .footer-col{
+        width: 50%;
+        padding:30px;
+    }
+}
+
+@media (max-width: 574px){
+    .footer-col{
+        width: 100%;
+        
+    }
+}
+
+.footer .container .row .footer-col .img-box img{
+    height: 8rem;
+    filter: drop-shadow(9px 9px 8px rgba(0,0,0,0.5));
+}
+</style>
+<body>
+    <section>
+<h1>Hello</h1>
+    </section>
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="footer-col">
+                    <div class="img-box">
+                       <a href=""> <img src="/images/US-1-removebg-preview.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                       
+                      
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <ul>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Store Locator</a>
+                        </li>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <!--
+                    <div class="search-con">
+                        <input type="text" placeholder="Search" id="input" class="footer-search">
+                       
+                    </div>
+                   -->
+                   <h4>
+                    Follow Us
+                   </h4>
+                   <div class="social-links">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="last-part">
+            <p>Copyright 2023 All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
